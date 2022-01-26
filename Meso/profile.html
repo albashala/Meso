@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/Meso/css/profile.css">
 </head>
 <body>
     <nav id="phone-nav">
@@ -18,20 +18,20 @@
                 <span class="line line3"></span>
               </div>  
             <div class="logo">
-              <img src="./images/logo.png" alt="">
+              <a href="home.html"><img src="./images/logo.png" alt=""></a>
             </div>
             <div class="menu-items">
-              <li><a href="#">Login</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Search</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="login.html">Log out</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="search.html">Search</a></li>
+              <li><a href="contact.html">Contact</a></li>
             
             </div>
           </div>
         </div>
       </nav>
     <header>
-    <img src="./images/logo.png" alt="" id="logo">
+   <a href="home.html" id="logo"><img src="./images/logo.png" alt=""></a>
     <nav>
         <ul class="nav_links">
              <li><div class="boxContainer">
@@ -46,8 +46,8 @@
                  </tr>
                 </table>
             </div></li>
-            <li><a class="nav-link" href="">Login</a></li>
-            <li><a href="" class="nav-link">About</a></li>
+            <li><a class="nav-link" href="login.html">Log out</a></li>
+            <li><a href="about.html" target="_blank"  class="nav-link">About</a></li>
     
         </ul>
     </nav>
@@ -55,55 +55,92 @@
 
     <div id="name-xp">
      <div id="pfp-info">
-    <img src="/images/Profile Picture.png" alt="" id="pfp-img" class="info-img">
+    <img src="/Meso/images/Profile Picture.png" alt="" id="pfp-img" class="info-img">
     <p>Username</p> 
 </div>
 <div id="badge-xp">
-<img src="/images/badge.png" alt="" id="badge-img" class="info-img">
+<img src="./images/badge.png" alt="" id="badge-img" class="info-img">
 <p>100xp</p>
 </div>
     </div>
 
+    
     <div id="tasks">
     <div id="schedule-text-image">
         <p>My schedule</p>
-      <a href=""><img src="/images/add.png" alt=""></a>
+      <a href="#popup2"><img src="./images/add.png" alt=""></a>
     </div>
     </div>
     <div class="task">
         <p class="task-text">Task 1</p>
         <div class="task-images">
-        <a href=""><img src="/images/edit.png" alt=""></a>
-        <a href=""><img src="/images/remove.png" alt=""></a>
+        <a href="#popup1"><img src="./images/edit.png" class="edit-img" alt=""></a>
+        <a href=""><img src="./images/remove.png" alt=""></a>
     </div>
     </div>
     <div class="task">
         <p class="task-text">Task 2</p>
         <div class="task-images">
-        <a href=""><img src="/images/edit.png" alt=""></a>
-        <a href=""><img src="/images/remove.png" alt=""></a>
+        <a href="#popup1"><img src="./images/edit.png" alt="" class="edit-img"></a>
+        <a href=""><img src="./images/remove.png" alt=""></a>
     </div>
     </div>
     <div class="task">
         <p class="task-text">Task 3</p>
         <div class="task-images">
-        <a href=""><img src="/images/edit.png" alt=""></a>
-        <a href=""><img src="/images/remove.png" alt=""></a>
+        <a href="#popup1"><img src="./images/edit.png" alt="" class="edit-img"></a>
+        <a href=""><img src="./images/remove.png" alt=""></a>
     </div>      
 </div>
+
+
+</div> 
+</div>
 <div id="buttons">
-<button class="button">
-    <img class="button-image button-1" src="/images/personal-library-icon.png" alt="">
+<a href="personal-library.html"><button class="button">
+    <img class="button-image button-1" src="./images/personal-library-icon.png" alt="">
 <p class="button-txt">Personal Library</p>
-</button>
-<button class="button">
-    <img class="button-image" src="/images/challenges-icon.png" alt="">
-<p class="button-txt">Challenges</p>
-</button>
-<button class="button">
-    <img class="button-image" src="/images/settings-icon.png" alt="">
+</button></a>
+<a href=""><button class="button">
+    <img class="button-image" src="./images/challenges-icon.png" alt="">
+<a href=""><p class="button-txt">Challenges</p>
+</button></a>
+<a href="settings.html"><button class="button">
+    <img class="button-image" src="./images/settings-icon.png" alt="">
 <p class="button-txt">Settings</p>
-</button>
+</button></a>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<h2 id="edit-task-title">New Task</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+            <div id="edit-task">
+                <form id="form-edit-task" action="">
+                    <input type="text" name="" id="task-name" class="edit-input" placeholder="Task Name">
+                    <input type="text" name="alert-time" id="alert-time" class="edit-input" placeholder="Alert Time">
+                    <input type="datetime" name="" id="dead-line" class="edit-input" placeholder="Deadline">    
+                </form>
+                <button id="confirm">Save</button>
+		</div>
+        </div>
+        </div>
+        </div>
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2 id="edit-task-title">Edit Task</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+            <div id="edit-task">
+                <form id="form-edit-task" action="">
+                    <input type="text" name="" id="task-name" class="edit-input" placeholder="Task Name">
+                    <input type="text" name="alert-time" id="alert-time" class="edit-input" placeholder="Alert Time">
+                    <input type="datetime" name="" id="dead-line" class="edit-input" placeholder="Deadline">    
+                </form>
+                <button id="confirm">Save</button>
+		</div>
+	</div>
+</div>
 </div>
 <footer id="footer">
     <div id="footer-container">
@@ -115,28 +152,28 @@
         </div>
         <div id="explore">
             <h1 id="explore-title">Explore</h1>
-            <a href=""><p class="explore-paragraph">About</p></a>
+            <a href="about.html"><p class="explore-paragraph">About</p></a>
             <a href=""><p class="explore-paragraph">Overview</p></a>
-            <a href=""><p class="explore-paragraph">Join Us</p></a>
+            <a href="sign-up.html"><p class="explore-paragraph">Join Us</p></a>
         </div>
         <div id="gallery">
             <h1 id="gallery-title">Gallery</h1>
             <div id="first-pair">
-            <img src="/images/footer-image-1.png" alt="" class="gallery-img">
-            <img src="/images/footer-image-2.png" alt="" class="gallery-img">
+            <img src="./images/footer-image-1.png" alt="" class="gallery-img">
+            <img src="./images/footer-image-2.png" alt="" class="gallery-img">
             </div>
             <div id="second-pair">
-            <img src="/images/footer-image-3.png" alt="" class="gallery-img">
-            <img src="/images/footer-image-4.png" alt="" class="gallery-img">
+            <img src="./images/footer-image-3.png" alt="" class="gallery-img">
+            <img src="./images/footer-image-4.png" alt="" class="gallery-img">
             </div>
         </div>
         <div id="about">
             <h1 id="about-title">About</h1>
-            <p class="about-paragraph">Lorem ipsum dolor sit <br>
-                 amet, consectetur <br>
-                  adipiscing elit, </p>
+            <p class="about-paragraph">An educational platform that <br>
+                encourages learning through <br>
+                 interactivity and fun. </p>
                   <div id="footer-buttons">
-                <button class="footer-button" id="contact-button">Contact</button>
+               <a href="contact.html"><button class="footer-button" id="contact-button">Contact</button></a>
                 <button class="footer-button" id="help-button">Help</button>
                   </div>       
         </div>
