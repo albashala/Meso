@@ -111,6 +111,9 @@ header{
     flex-direction: column;
     align-items: center;
 }
+.button-image{
+  width: 50px;
+}
 
 .task{
     display: flex;
