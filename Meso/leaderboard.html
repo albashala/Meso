@@ -1,138 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Meso/css/leaderboard.css">
-    <title>Leaderboard</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="/Meso/css/leaderboard.css">
 </head>
 <body>
-    <div class="center">
-        <div class="top3">
-          <div class="two item">
-            <div class="pos">
-              2
-            </div>
-            <div class="pic" style="background-image: url(&#39;https://randomuser.me/api/portraits/men/44.jpg&#39;)"></div>
-            <div class="name">
-              Username
-            </div>
-            <div class="score">
-              6453
-            </div>
-          </div>
-          <div class="one item">
-            <div class="pos">
-              1
-            </div>
-            <div class="pic" style="background-image: url(&#39;https://randomuser.me/api/portraits/men/31.jpg&#39;)"></div>
-            <div class="name">
-                Username
-            </div>
-            <div class="score">
-              6794
-            </div>
-          </div>
-          <div class="three item">
-            <div class="pos">
-              3
-            </div>
-            <div class="pic" style="background-image: url(&#39;https://randomuser.me/api/portraits/women/91.jpg&#39;)"></div>
-            <div class="name">
-                Username
-            </div>
-            <div class="score">
-              6034
-            </div>
-          </div>
+  <nav id="phone-nav">
+    <div class="navbar">
+      <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>  
+        <div class="logo">
+          <img src="./images/logo.png" alt="">
         </div>
-        <div class="list">
-          <div class="item">
-            <div class="pos">
-              4
-            </div>
-            <div class="pic" style="background-image: url(&#39;https://randomuser.me/api/portraits/men/88.jpg&#39;)"></div>
-            <div class="name">
-                Username
-            </div>
-            <div class="score">
-              5980
-            </div>
-          </div>
-          <div class="item">
-            <div class="pos">
-              5
-            </div>
-            <div class="pic" style="background-image: url(&#39;https://randomuser.me/api/portraits/women/29.jpg&#39;)"></div>
-            <div class="name">
-                Username
-            </div>
-            <div class="score">
-              5978
-            </div>
-          </div>
-          <div class="item">
-            <div class="pos">
-              6
-            </div>
-            <div class="pic" style="background-image: url(&#39;https://randomuser.me/api/portraits/women/85.jpg&#39;)"></div>
-            <div class="name">
-                Username
-            </div>
-            <div class="score">
-              5845
-            </div>
-          </div>
-          <div class="item">
-            <div class="pos">
-              7
-            </div>
-            <div class="pic" style="background-image: url(&#39;https://randomuser.me/api/portraits/women/39.jpg&#39;)"></div>
-            <div class="name">
-                Username
-            </div>
-            <div class="score">
-              5799
-            </div>
-          </div>
-          <div class="item">
-            <div class="pos">
-              8
-            </div>
-            <div class="pic" style="background-image: url(&#39;https://randomuser.me/api/portraits/men/77.jpg&#39;)"></div>
-            <div class="name">
-                Username
-            </div>
-            <div class="score">
-              5756
-            </div>
-          </div>
-          <div class="item">
-            <div class="pos">
-              9
-            </div>
-            <div class="pic" style="background-image: url(&#39;https://randomuser.me/api/portraits/women/49.jpg&#39;)"></div>
-            <div class="name">
-                Username
-            </div>
-            <div class="score">
-              5713
-            </div>
-          </div>
-          <div class="item">
-            <div class="pos">
-              10
-            </div>
-            <div class="pic" style="background-image: url(&#39;https://randomuser.me/api/portraits/women/30.jpg&#39;)"></div>
-            <div class="name">
-                Username
-            </div>
-            <div class="score">
-              5674
-            </div>
-          </div>
+        <div class="menu-items">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        
         </div>
       </div>
+    </div>
+  </nav>
+<header>
+<a href="home.html" id="logo"><img src="./images/logo.png" alt=""></a>
+<nav>
+    <ul class="nav_links">
+         <li><div class="boxContainer">
+            <table class="elementsContainer">
+             <tr>
+                 <td>
+                     <input type="text" name="" class="search" placeholder="Search course...">
+                 </td>
+                 <td>
+                  <a href="#"><img src="./images/loupe 1.png" alt="" class="material-icons"></a>
+                  <a href="#"></a>
+                 </td>
+             </tr>
+            </table>
+        </div></li>
+        <li><a class="nav-link" href="login.html">Login</a></li>
+        <li><a href="about.html" target="_blank" class="nav-link" >About</a></li>
+        <li><a class="nav-link"href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+  <div id="leaderboard">
+    <div class="ranked 1">
+  <div class="position">
+    <p>1</p>
+  </div>
+  <div class="user-img">
+    <img class="pfp-img" src="/Meso/images/user.png" alt="">
+  </div>
+      <div class="name">
+    <p>Username</p>
+  </div>
+  <div class="score">
+6000xp
+  </div>
+    </div>
+    <div class="ranked 2">
+      <div class="position">
+        <p>2</p>
+        </div>
+        <div class="user-img">
+          <img class="pfp-img" src="/Meso/images/user.png" alt="">
+      </div>
+          <div class="name">
+        <p>Username</p>
+      </div>
+      <div class="score">
+    5000xp
+      </div>
+    </div>
+    <div class="ranked 3">
+      <div class="position">
+        <p>3</p>
+      </div>
+      <div class="user-img">
+        <img class="pfp-img" src="/Meso/images/user.png" alt="">
+      </div>    
+      <div class="name">
+        <p>Username</p>
+      </div>
+      <div class="score">
+    4000xp
+      </div>
+    </div>
+    <div class="ranked 4">
+      <div class="position">
+        <p>4</p>
+      </div>
+      <div class="user-img">
+        <img class="pfp-img" src="/Meso/images/user.png" alt="">
+      </div>    
+      <div class="name">
+        <p>Username</p>
+      </div>
+      <div class="score">
+    3000xp
+      </div>
+    </div>
+    <div class="ranked 5">
+      <div class="position">
+        <p>5</p>
+      </div>
+      <div class="user-img">
+        <img class="pfp-img" src="/Meso/images/user.png" alt="">
+      </div>    
+      <div class="name">
+        <p>Username</p>
+      </div>
+      <div class="score">
+    2000xp
+      </div>
+    </div>
+    <div class="ranked 6">
+      <div class="position">
+        <p>6</p>
+      </div>
+      <div class="user-img">
+        <img class="pfp-img" src="/Meso/images/user.png" alt="">
+      </div>    
+      <div class="name">
+        <p>Username</p>
+      </div>
+      <div class="score">
+    1000xp
+      </div>
+    </div>
+    <div class="ranked 7">
+      <div class="position">
+        <p>7</p>
+      </div>
+      <div class="user-img">
+        <img class="pfp-img" src="/Meso/images/user.png" alt="">
+      </div>    
+      <div class="name">
+        <p>Username</p>
+      </div>
+      <div class="score">
+    500xp
+      </div>
+    </div>
+    <div class="ranked 8">
+      <div class="position">
+        <p>8</p>
+      </div>
+      <div class="user-img">
+        <img class="pfp-img" src="/Meso/images/user.png" alt="">
+      </div>    
+      <div class="name">
+        <p>Username</p>
+      </div>
+      <div class="score">
+    400xp
+      </div>
+    </div>
+    <div class="ranked 9">
+      <div class="position">
+        <p>9</p>
+      </div>
+      <div class="user-img">
+        <img class="pfp-img" src="/Meso/images/user.png" alt="">
+      </div>    
+      <div class="name">
+        <p>Username</p>
+      </div>
+      <div class="score">
+    300xp
+      </div>
+    </div>
+    <div class="ranked 10"> <div class="position">
+      <p>10</p>
+    </div>
+    <div class="user-img">
+      <img class="pfp-img" src="/Meso/images/user.png" alt="">
+    </div>
+        <div class="name">
+      <p>Username</p>
+    </div>
+    <div class="score">
+  200xp
+    </div></div> 
+  </div>
+  <footer id="footer">
+    <div id="footer-container">
+        <div id="books">
+            <h1 id="books-title">Books</h1>
+            <a href=""><p class="books-paragraph">Elon Musk</p></a>
+            <a href=""><p class="books-paragraph">Java</p></a>
+            <a href=""><p class="books-paragraph">Artificial Intelligence</p></a>
+        </div>
+        <div id="explore">
+            <h1 id="explore-title">Explore</h1>
+           <a href="about.html"><p class="explore-paragraph">About</p></a>
+           <a href=""><p class="explore-paragraph">Overview</p></a>
+           <a href="sign-up.html"><p class="explore-paragraph">Join Us</p></a>
+        </div>
+        <div id="gallery">
+            <h1 id="gallery-title">Gallery</h1>
+            <div id="first-pair">
+            <img src="./images/footer-image-1.png" alt="" class="gallery-img">
+            <img src="./images/footer-image-2.png" alt="" class="gallery-img">
+            </div>
+            <div id="second-pair">
+            <img src="./images/footer-image-3.png" alt="" class="gallery-img">
+            <img src="./images/footer-image-4.png" alt="" class="gallery-img">
+            </div>
+        </div>
+        <div id="about">
+            <h1 id="about-title">About</h1>
+            <p class="about-paragraph">An educational platform that <br>
+                 encourages learning through <br>
+                  interactivity and fun. </p>
+                  <div id="footer-buttons">
+                    <a href="contact.html"> <button class="footer-button" id="contact-button">Contact</button></a>
+                <button class="footer-button" id="help-button">Help</button>
+                  </div>       
+        </div>
+    </div>
+    </footer>
 </body>
 </html>

@@ -80,6 +80,7 @@ header{
     font-size: 24px;
     color: black;
     flex-wrap: wrap;
+    z-index: -1;
 }
 #badge-xp{
     display: flex;
@@ -87,6 +88,7 @@ header{
     gap: 10px;
     font-size: 50px;
     color: black;
+    z-index: -1;
 }
 #name-xp{
     display: flex;
